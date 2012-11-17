@@ -3,7 +3,7 @@
 
 <p align="right">
   Small chunks of code by myself.
-  <img src="http://akvis.com/img/examples/sketch/hands/hands-sketch.jpg" style="height:100px"/>
+  <img src="http://i.imgur.com/KNlCH.jpg" style="height:100px"/>
 </p>
 
 
