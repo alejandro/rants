@@ -1,8 +1,9 @@
 ## Rants
 
-Small chunks of code by myself.
+
 <p align="right">
-  <img src="http://akvis.com/img/examples/sketch/hands/hands-sketch.jpg" />
+  Small chunks of code by myself.
+  <img src="http://akvis.com/img/examples/sketch/hands/hands-sketch.jpg" style="height:100px"/>
 </p>
 
 
