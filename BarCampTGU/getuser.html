@@ -1,0 +1,15 @@
+<video autoplay></video>
+<script type="text/javascript" src=""></script>
+<script>
+  if (!window.URL) {
+    window.URL = window.URL || window.webkitURL
+  }
+  navigator.webkitGetUserMedia({video: true, audio: true}, function(stream){
+    var video = document.querySelector('video');
+    video.src = window.URL.createObjectURL(stream);
+  
+  }, function (err){
+    console.log(err)
+    alert('Upsy!')
+  });
+</script>
