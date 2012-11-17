@@ -1,12 +1,7 @@
 ## Rants
 
-
-<p align="right">
-  Small chunks of code by myself.
-  <img src="http://i.imgur.com/KNlCH.jpg" style="height:100px"/>
-</p>
-
-
+Small chunks of code by myself.
+<img src="http://i.imgur.com/KNlCH.jpg" style="height:100px"/>
 
 
 
