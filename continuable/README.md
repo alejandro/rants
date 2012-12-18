@@ -1,6 +1,6 @@
 # Continuable
 
-[Tim Caswell](https://github.com/creationix/) is proposing a ["continuable" style in luvit](https://github.com/luvit/continuable) (instead of raw callbacks).
+[Tim Caswell](https://github.com/creationix/) is proponing a ["continuable" style in luvit](https://github.com/luvit/continuable) (instead of raw callbacks).
 This a silly attempt to make that same stuff in vanilla js.
 
 
