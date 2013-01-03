@@ -1,7 +1,7 @@
 ## Rants
 
 Small chunks of code by myself.
-<p align="right">
+<p>
   <img src="http://i.imgur.com/KNlCH.jpg" style="height:100px"/>
 </p>
 
