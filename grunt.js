@@ -26,7 +26,7 @@ module.exports = function(grunt) {
     var files = require('fs').readdirSync('./')
       , path = require('path')
       , rants =[]
-      , ignore = ['.git']
+      , ignore = ['.git', '.gitignore']
     files.forEach(function (item){
       if (path.extname(item) === '' && ignore.indexOf(item) < 0) {
         rants.push(item)

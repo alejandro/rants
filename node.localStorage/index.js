@@ -50,7 +50,6 @@ var Storage = Object.create({
     return Storage
   },
   key: function (i) {
-    console.log(rref.has(i))
     return rref.get(i)
   },
   removeItem: function (key){
