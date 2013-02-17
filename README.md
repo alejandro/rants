@@ -5,17 +5,12 @@ Small chunks of code by myself.
   <img src="http://i.imgur.com/KNlCH.jpg" style="height:100px"/>
 </p>
 
-
-
-
-
-
 ## List of Rants
  - [BarCampTGU](http://github.com/alejandro/rants/blob/master/BarCampTGU)
- - [ee](http://github.com/alejandro/rants/blob/master/ee)
- - [tmpl](http://github.com/alejandro/rants/blob/master/tmpl)
- - [CamaraMovil](http://github.com/alejandro/rants/blob/master/CamaraMovil)
+ - [bins](http://github.com/alejandro/rants/blob/master/bins)
  - [continuable](http://github.com/alejandro/rants/blob/master/continuable)
+ - [ee](http://github.com/alejandro/rants/blob/master/ee)
+ - [node-ls](http://github.com/alejandro/rants/blob/master/node-ls)
 
 ## License
 

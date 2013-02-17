@@ -1,10 +1,12 @@
 #!/usr/bin/env node
-
 // yeah an alias is way more awesome, but i'm a lazy man
+
 var ex = require('child_process').exec
 
 var name = process.argv[2]
   , repo = process.argv[3]
+
+if (!repo) repo = name, name = process.env.USER
 
 if (!name && !repo) {
   console.log('git-clone usage:')
@@ -12,11 +14,25 @@ if (!name && !repo) {
   return console.log('') 
 }
 
+console.log('...cloning', repo, 'of', name)
 
-var data = ex('cd ' + process.cwd() + ' && git clone http://github.com/' + name + '/' +  repo)
+var data = ex([
+  'cd ' + process.cwd()
+  , ' && '
+  , ' git clone http://github.com/' + name + '/' +  repo
+  ].join(''))
 
-data.stdout.on('data', console.log)
-data.stderr.on('data', console.warn)
+data.stdout.on('data', logBuf('log'))
+data.stderr.on('data', logBuf('warn'))
 
-data.on('end', function(){ console.log('done') })
+data.on('end', function(){
+  console.log('done')
+})
+
+function logBuf(type){ 
+  return function(buf){
+    console[type](buf.toString())
+  }
+}
+
 
