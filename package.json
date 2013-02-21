@@ -1,0 +1,28 @@
+{
+  "name": "rants",
+  "version": "0.0.0",
+  "description": "Rants and Strogonnof",
+  "main": "define.js",
+  "dependencies": {
+    "marked": "~0.2.8"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt": "~0.4.0",
+    "grunt-contrib-watch": "~0.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/alejandro/rants"
+  },
+  "keywords": [
+    "rants"
+  ],
+  "author": "Alejandro Morales <me@alejo.in>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "06cbfd73fd83c370590b8c65503b72dafbaa55f1"
+}

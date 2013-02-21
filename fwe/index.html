@@ -1,0 +1,76 @@
+<html>
+<head>
+  <title> Fire up Ember.js </title>
+  <link rel="stylesheet" type="text/css" href="css/foundation.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body role="main">
+  <script type="text/x-handlebars" data-template-name="application">
+    <div class="row">
+      <div class="twelve columns">
+      	<h1>Restaurante</h1>
+      	{{outlet}}
+      </div>
+    </div>  
+  </script>
+  <script type="text/x-handlebars" data-template-name="tables">
+    <div class="row">
+      <h2>Mesas</h2>
+      <div class="four columns" id="tables">
+        {{ partial "tableMenu" }}
+      </div>
+      <div class="eight columns" id="order">
+        {{outlet}}
+      </div>
+    </div>
+  </script>
+  <script type="text/x-handlebars" data-template-name="_tableMenu">
+    {{#each table in controller }}
+      {{#linkTo 'table' table class="panel six columns"}}{{ table.id }}{{/linkTo}}
+    {{/each}}
+  </script>
+  <script type="text/x-handlebars" data-template-name="table">
+    <div class="row">
+      <div class="tree columns">
+        {{render 'food'}}
+      </div>
+      <div class="nine columns">
+        <h2>Mesa <span>{{id}}</span></h2>
+        {{ render 'tab' tab }}
+      </div>
+    </div>
+  </script>
+  <script type="text/x-handlebars" data-template-name="tab">
+    <ul id="customer-tab">
+      {{#each tabItem in tabItems}}
+        <li>
+          <h3>{{ tabItem.food.name }} <span> Lps. {{ money tabItem.cents}}</span></h3>
+        </li>
+        {{else}}
+        <li><h3>Da click en la comida para agregarla </h3></li>
+      {{/each}}
+      <li id="total">
+        <h3>Total <span>Lps. {{ money cents }}</span></h3> 
+    </ul>
+  </script>
+  <script type="text/x-handlebars" data-template-name="food">
+    <ul id="menu">
+      {{#each food in controller}}
+        <li>
+          <a href="#" {{ action 'addFood' food }}>
+            <img {{ bindAttr src="food.imageUrl" }}>
+            <p>{{ food.name }}</p> 
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </script>
+  <script type="text/x-handlebars" data-template-name="tables/index">
+    <h3>Selecciona una Mesa </h3>
+  </script> 
+  <script type="text/javascript" src="components/jquery/jquery.js"></script>
+  <script type="text/javascript" src="components/handlebars/handlebars.js"></script>
+
+  <script type="text/javascript" src="components/ember/ember.js"></script>
+  <script type="text/javascript" src="components/ember/ember-data.js"></script>
+  <script type="text/javascript" src="app.js"></script>

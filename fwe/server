@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+echo 'Servidor en 8000'
+python -m SimpleHTTPServer
