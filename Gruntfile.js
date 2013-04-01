@@ -51,7 +51,7 @@ module.exports = function(grunt) {
     var files = require('fs').readdirSync('./')
       , path = require('path')
       , rants = []
-      , ignore = ['.git', '.gitignore']
+      , ignore = ['.git', '.gitignore','node_modules']
 
     files.forEach(function (item){
       if (path.extname(item) === '' && ignore.indexOf(item) < 0) {
@@ -71,6 +71,6 @@ module.exports = function(grunt) {
     grunt.log.write('done')
   })
   // Default task.
-  grunt.registerTask('default', ['jshint', 'nodeunit']);
+  grunt.registerTask('default', ['list']);
 
 };

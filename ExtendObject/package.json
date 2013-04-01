@@ -1,0 +1,23 @@
+{
+  "name": "ExtendObject",
+  "version": "0.0.0",
+  "description": "Simple package that adds a bunch of options to raw objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alejandro/rants/tree/master/ExtendObject"
+  },
+  "keywords": [
+    "object",
+    "has",
+    "get"
+  ],
+  "author": "Alejandro Morales <me@alejo.in>",
+  "license": "MIT",
+  "devDependencies": {
+    "tap": "~0.4.1"
+  }
+}
