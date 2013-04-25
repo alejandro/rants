@@ -13,6 +13,7 @@ Small chunks of code by myself.
  - [ee](http://github.com/alejandro/rants/blob/master/ee)
  - [fwe](http://github.com/alejandro/rants/blob/master/fwe)
  - [node-ls](http://github.com/alejandro/rants/blob/master/node-ls)
+ - [Structure](http://github.com/alejandro/rants/blob/master/Structure)
 
 ## License
 
